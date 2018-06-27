@@ -1,0 +1,22 @@
+{
+  "name": "react-gallery",
+  "version": "0.0.1",
+  "description": "a gallery based on react & node & koa & mongoDB",
+  "main": "server index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sjn",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
