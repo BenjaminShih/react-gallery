@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
     // 入口文件
@@ -24,10 +25,16 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'React Demo',
             template: path.resolve(__dirname, 'index.template.html')
-        })
+        }),
+        // 热替换插件
+        new webpack.HotModuleReplacementPlugin(),
+        // 执行热替换时打印模块名字
+        new webpack.NamedModulesPlugin(),
     ],
     //前端开发服务配置
     devServer: {
+        // 热替换配置字段
+        hot: true,
         contentBase: path.resolve(__dirname, 'dist'),
         port: 9000,
     }

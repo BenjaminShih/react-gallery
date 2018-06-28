@@ -1,7 +1,7 @@
 {
-  "name": "react-gallery",
+  "name": "react-demo",
   "version": "0.0.1",
-  "description": "a gallery based on react & node & koa & mongoDB",
+  "description": "a demo based on react & node & koa & mongoDB",
   "main": "server index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +21,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "html-webpack-plugin": "^3.2.0",
+    "react-hot-loader": "^4.3.3",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
