@@ -4,12 +4,15 @@
   "description": "a demo based on react & node & koa & mongoDB",
   "main": "server index.js",
   "scripts": {
+    "start": "webpack-dev-server --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sjn",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
@@ -21,6 +24,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.17.5",
     "react-hot-loader": "^4.3.3",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8",

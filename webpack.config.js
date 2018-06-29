@@ -37,5 +37,11 @@ module.exports = {
         hot: true,
         contentBase: path.resolve(__dirname, 'dist'),
         port: 9000,
+        proxy: {
+            "/api": {
+                target: "http://localhost:3000",
+                pathRewrite: {"^/api" : ""},
+            }
+        },
     }
 }
